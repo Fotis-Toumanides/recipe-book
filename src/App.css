@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+
+}
+
+h1 {
+  color: blue;
 }
 
 .App-logo {
@@ -14,14 +19,19 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  padding-top: 80px;
+  background-color: rgb(213, 247, 47);
+  background-image: url('components/images/CHEF_COOKIG.png');
+  color: blue;
+  text-shadow: 0 2px 2px #fff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+
+  box-shadow: 0 10px 5px 1;
 }
 
 .App-link {
@@ -32,7 +42,51 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.recipe-name {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.recipe-name:hover {
+  color: #b712e9;
+  /* Change to a different color for a fresh look */
+  text-decoration: underline;
+  transform: scale(1.05);
+  /* Slightly increases the size of the text */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Adds a subtle shadow for a lifting effect */
+}
+
+.addRecipe {
+  --bg: #000;
+  --hover-bg: #b712e9;
+  --hover-text: #000;
+  color: #fff;
+  border: 2px solid var(--bg);
+  border-radius: 4px;
+  border-color: #fff;
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.3s;
+}
+
+.addRecipe:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  border-color: #b712e9;
+  font-weight: bold;
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.addRecipe:active {
+  transform: translate(0);
+  box-shadow: none;
 }

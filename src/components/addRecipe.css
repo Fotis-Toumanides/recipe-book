@@ -1,0 +1,10 @@
+.recipe-name {
+    width: 100%;
+}
+
+label {
+    color: blue;
+    background-color: beige;
+    border-radius: 10px;
+    padding: 0 5px 0 5px;
+}
